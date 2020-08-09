@@ -1,0 +1,141 @@
+Comentarios:
+
+HTML: <-- -->
+
+hyperText - Hipertexto
+Markup - Marcação
+Language - Linguagem
+
+coisas no meio da tag é um atributo
+
+CSS: /* */
+
+Cascading Style Sheets
+
+------------------------------------------------------
+
+Hierarquia de seletor:
+
+# -> id="",
+. -> class="",
+h1 -> <h1>
+
+------------------------------------------------------
+Variável em CSS:
+
+:root{  Vai conter o estilos da raiz da página 
+     --color-background: #FFFFFF; -> Variáveis no CSS;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+-----------------------------------------------------
+
+Tamanho de fontes:
+
+Padrão: 16px - 100% - 1rem
+
+O 'rem' é relativo ao tamanho da fonte colocada no ':root'
+-----------------------------------------------------
+
+Box model:
+
+    border: 1px solid red; -> Bordas da caixa 
+    padding: 10px 40px 60px 2px; -> sentido horário -> preenchimento
+    margin: 40px; -> sentido horário margem para a palavras
+
+    se colocar so um valor ele coloca esse valor para todos os lados
+
+    width: 300px; -> largura 
+    height: 300px; -> altura
+
+    display: block, -> a box ocupa toda alinha 
+             inline, -> as boxes ficam uma ao lado do outro
+             flex, -> flexíveis na página
+
+----------------------------------------------------
+
+font-weight: 500; 
+font-family: Poppins;
+font-size: 1.6rem;
+color: var(--color-text-base);
+
+----------------------------------------------------
+
+font- weight -> é o peso da letra (mais fina ou mais grossa)
+line-height -> altura da caixa da linha do texto
+
+display-flex + align-items: center -> consegue deixar os nomes alinhados na lateral Certo
+
+text-decoration: none; -> tira a linha debaixo do botão 
+
+.container:hover { } -> hover é quando o mouse está em cima
+
+transition: background 0.2s; -> transition é uma propriedade para animações 
+-> quer dizer que quando mudar o background ele vai fazer isso com 0.2s 
+
+@media (min-width: 1100px){ } -> tipo uma função em CSS, quando estiver na especificação,
+ele vai fazer o que tiver dentro da função
+
+display: grid; -> para fazer linhas e colunas para alinhar a imagem botões etc,
+grid-template-columns: ; -> divide as colunas poder ser em %, frações (fr) ou px
+
+grid-template-rows: ; divide as linhas
+
+ grid-template-areas: 
+        "proffy image image"
+        "button button texting"; -> mostrando como quer que fica,
+-> Depois voce chama os ids e fala qual é qual,
+
+.logo-container {
+        grid-area: proffy;
+    }
+...
+
+isso fará com que tudo se organize mais ou menos...
+
+gap: ; -> dá um espaço em tudo
+--------------------------------------------------------
+
+.input-block:focus-within::after {
+    content: "";
+} -> elemento dinamico no CSS que so funciona depois de efetuar a ação no site 
+
+
+<fieldset>
+        <legend></legend>
+</fieldset>   -> fieldset serve para fazer agrupamentos de dados e dentro dela precisa de um legend
+
+required no fim do input serve para que o não seja enviado sem nada 
+
+<small> quer dizer que o texto é pequeno
+
+<textarea> Serve para escrever um monte de coisa 
+
+resize -> CSS -> é para tirar o arrasto do textarea, ai pode colocar so na vertical ou horizontal
+
+.input-block+.input-block{ } -> isso quer dizer que ele vai fazer o que tiver dentro nos elementos de id input-block que tiverem outro input-block antes
+
+transform: ; -> CSS -> ele tem varias funções para mexer os botões um pouco ao passar o cursor,
+pode ser na vertical, horizontal e muitos outros
+
+------------------------------------------------------------
+
+git bash - terminal 
+
+para ir para pasta -> cd /c/nlw -> ou o caminho que desejar
+
+pwd -> mostra qual pasta você está 
+
+node -v -> para saber se o node está funcionando 
+
+npm é o responsável pelos pacotes do node 
+
+npm init -y -> quero começar um novo projeto na minha pasta raiz 
+
+npm install express -> instala um biblioteca de coisas para o projeto 
+
+npm install nodemon -D -> monitoramento do node pra quando salvar ja reiniciar o terminal, utilizado só no desenvolvimento
+
